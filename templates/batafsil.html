@@ -1,0 +1,24 @@
+{% extends 'index.html' %}
+
+{% load static %}
+{% block content %}
+      
+
+
+<center>
+<div class="row mt-5 ">
+    <div class="col-sm-12">
+      <div class="card">
+        <div class="card-body">
+          <img style="height: 250px!important;" src="{{ i.image.url }}" class="card-img-top" alt="...">
+          <h5 class="card-title">Avto nomi: {{ i.name }}</h5>
+          <p class="card-text">Avto Turi: {{ i.type }}</p>
+          <a style="width: 100%!important;" href="/" class="btn btn-primary">Asosiy </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</center>
+
+
+{% endblock content %}
